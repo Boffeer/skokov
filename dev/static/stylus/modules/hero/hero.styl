@@ -1,0 +1,47 @@
+.hero
+	padding-top 265px
+	max-width 1600px
+	height 900px
+	margin 0 auto
+	background url(../img/content/hero/hero__bg.png) 0 0 no-repeat
+	position relative
+	&:before
+		content ''
+		display block
+		position absolute
+		top 0
+		left 0
+		z-index 1
+		size(100%, 100%)
+		background-color rgba(#000, .6)
+	&:after
+		content url(../img/content/hero/hero__chart.png)
+		position absolute
+		bottom 0
+		margin-bottom -5px
+		z-index 4
+		width 1600px
+	&-buttons
+		display flex
+		justify-content space-between
+		width 65%
+	&__button
+		@extend .button
+		&--learn
+			background-color #343434
+	&-text
+		color #ffffff
+		width 60%
+		position relative
+		z-index 4
+	&__title
+		margin-bottom 35px
+		font-size 60px
+		line-height 74px
+		@extend .bold
+	&__descr
+		margin-bottom 40px
+		font-size 20px
+		line-height 28px 
+			
+		
