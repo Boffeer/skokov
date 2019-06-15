@@ -1,0 +1,27 @@
+section.feedback
+	.container
+		.feedback-content
+			.feedback-left
+				a(href="#").feedback__logo Skokov
+				p.feedback__descr
+				.underline
+				.feedback-contacts
+					.feedback-address
+						img.feedback-address__img
+						span.feedback__text
+					.feedback-call
+						img.feedback-call__img
+						span.feedback__text
+					.feedback-mail
+						img.feedback-mail__img
+						span.feedback__text
+			.feedback-right
+				h2.feedback__title
+				.underline
+				.feedback__tip
+				form(action="#").feedback-form
+					input(type="text" required placeholder="Name").feedback__input
+					input(type="email" required placeholder="Email").feedback__input
+					input(type="text" required placeholder="Subject").feedback__input
+					textarea(placeholder="Message")
+					input(type="submit" value="Send")

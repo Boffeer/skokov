@@ -1,0 +1,46 @@
+.about
+	padding-top 70px
+	&__title
+		@extend .title
+	&__descr
+		@extend .descr
+		width 70%
+		margin-bottom 55px
+	&__what
+		display flex
+		margin-bottom 50px
+	
+	&__we-do
+		width 50%
+	&__clients
+		width 47%
+.we-do
+	&__title
+		@extend .red-title
+	&__descr
+		padding-right 60px
+		color colorD
+		font-size 14px
+		line-height 24px
+		widht 100%
+		
+.clients
+	&__title
+		@extend .red-title
+	&-slider
+		&-item
+			display flex 
+			justify-content space-between
+			flex-flow row wrap
+		&__inner
+			max-width 185px
+			max-height 185px
+			margin-bottom 5px 
+			
+.our-team
+	&__title
+		@extend .red-title
+	&__block
+		display flex
+		flex-flow row wrap
+		margin-bottom 80px

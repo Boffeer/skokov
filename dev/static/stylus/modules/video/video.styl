@@ -1,0 +1,33 @@
+.video
+	size(1600px, 400px)
+	margin 0 auto
+	position relative
+	color #ffffff
+	text-align center
+	background url(../img/content/video-bg.png)
+	&:before
+		darkBg()
+	&:after
+		dotsBg()
+	&-content
+		position relative
+		z-index 1
+		margin 0 auto
+		padding-top 89px
+		width 85%
+	&__title
+		margin 0 auto 25px
+		width 90%
+		font-size 34px
+		text-transform uppercase
+		@extend .bold
+.play-button
+	margin 0 auto
+	size(92px, 92px)
+	background-color mainColor
+	position relative
+	z-index 2
+	border-radius 50%
+	margin-bottom 30px
+.play__icon
+	margin 35% 0 0 5%

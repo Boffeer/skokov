@@ -1,0 +1,45 @@
+.news
+	&__title
+		@extend .title
+	&__descr
+		@extend .descr
+	
+	&-blocks
+		display flex
+		justify-content space-between
+	&-left
+		width 75%
+		&__top
+		&__bottom
+			display flex
+		
+	&-right 
+		width 25%
+		
+	&-text
+		padding 29px
+		size(300px, 300px)
+		background-color colorD 
+		&__title
+			@extend .red-title
+		&__descr
+			color #fff
+			font-size 12px
+			margin-bottom 30px
+		&__date
+			color mainColor
+			font-size 12px
+			font-style italic
+			text-align right
+			
+// .text
+// 	&-top
+// 	&-bottom
+// 	&-right
+// 		postion relative
+// 		&:before
+// 			content url(../img/content/arrow.png)
+// 			display block
+// 			postion absolute
+// 			size(58px, 58px)
+// 			top -500px
