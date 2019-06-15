@@ -19,8 +19,11 @@
 		position absolute
 		bottom 0
 		margin-bottom -5px
-		z-index 4
-		width 1600px
+		z-index 1
+		width 100%
+	&-contern
+		position relative
+		z-index 6 
 	&-buttons
 		display flex
 		justify-content space-between
@@ -28,6 +31,7 @@
 	&__button
 		@extend .button
 		&--learn
+			@extend .button
 			background-color #343434
 	&-text
 		color #ffffff
@@ -43,5 +47,33 @@
 		margin-bottom 40px
 		font-size 20px
 		line-height 28px 
-			
+
+
+// ipad portrait
+@media (min-width: 768px) and (max-width: 1024px)
+	.hero
+		padding-top 140px
+		&-text
+			width 60%
+			margin 0 auto
+		&__title
+			font-size 38px 
+		&-buttons
+			width 100%
+			display flex
+			justify-content space-around
+
+// ipad landscape
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+	.hero
+		padding-top 150px 
+		&-text
+			width 80%
+			margin 0 auto
+		&-buttons
+			width 100%
+			display flex
+			justify-content space-around
+		
+
 		

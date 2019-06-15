@@ -1,11 +1,13 @@
 .video
 	max-width 1600px
+	margin 0 auto 
 	height 400px
 	margin 0 auto
 	position relative
 	color #ffffff
 	text-align center
 	background url(../img/content/video-bg.png)
+	overflowX hidden
 	&:before
 		darkBg()
 	&:after
@@ -23,6 +25,9 @@
 		text-transform uppercase
 		@extend .bold
 .play-button
+	display flex
+	align-items center 
+	justify-content center
 	margin 0 auto
 	size(92px, 92px)
 	background-color mainColor
@@ -30,5 +35,14 @@
 	z-index 2
 	border-radius 50%
 	margin-bottom 30px
-.play__icon
-	margin 35% 0 0 5%
+	transition all .5s 
+	&:hover
+		width 130px
+		background-color mianColor -15%
+		border-radius 15px
+		transition all .5s 
+
+// ipad landscape
+@media (min-width: 768px) and (max-width: 1024px)
+	.video-content
+		padding-top 60px

@@ -1,10 +1,12 @@
 .contact
-	size(1600px, 400px)
+	max-width 1600px 
+	height 400px
 	margin 0 auto
 	background #413f3e url(../img/content/contact-us-bg.png) 0 0 no-repeat
 	position relative
+	margin 0 auto 
 	&:before
-		content ''
+		content url(../img/content/dots.png)
 		display block
 		size(100%, 100%)
 		position absolute
@@ -12,14 +14,15 @@
 		left 0
 		z-index 0 
 		background-color rgba(#413f3e, .7)
-	&:after
-		content url(../img/content/dots.png)
-		display block
-		size(100%, 100%)
-		position absolute
-		top 0
-		left 0
-		z-index 0
+		overflow hidden 
+	// &:after
+	// 	content url(../img/content/dots.png)
+	// 	display block
+	// 	size(100%, 100%)
+	// 	position absolute
+	// 	top 0
+	// 	left 0
+	// 	z-index 0
 	&-content
 		text-align center
 		position relative

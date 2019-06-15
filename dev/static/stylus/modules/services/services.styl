@@ -15,7 +15,7 @@
 		display flex
 		justify-content space-between
 		flex-flow row wrap
-		margin-bottom 25px
+		margin 0 auto 25px auto
 	&__feature
 		width 21%
 		margin-bottom 50px
@@ -36,4 +36,27 @@
 		font-size 14px
 		width 210px
 		margin 0 auto
+		
+// ipad portrait
+@media (min-width: 768px) and (max-width: 1024px)		
+	.services
+		&-features
+			display flex
+			flex-flow row wrap
+			width 80% 
+		&__feature
+			width 28%
+			&:nth-child(n+5) .feature__title 
+				margin-bottom 25px
+			&:nth-child(n+5) .feature__logo
+					margin-bottom 22px 
+				
+			
+	
+// ipad land
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+	.services
+		&-features
+			max-width 95%
+
 		
