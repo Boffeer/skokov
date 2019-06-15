@@ -3,25 +3,25 @@ section.feedback
 		.feedback-content
 			.feedback-left
 				a(href="#").feedback__logo Skokov
-				p.feedback__descr
-				.underline
+				p.feedback__descr Thank you for your interest in&nbsp;SKOKOV. Please contact&nbsp;us using the information below. To&nbsp;locate contacts in&nbsp;the SKOKOV office closest to you, visit our office websites. To&nbsp;get the latest updates from SKOKOV, subscribe to&nbsp;a&nbsp;newsletter or&nbsp;connect with&nbsp;us on&nbsp;social media.
+				.underline.feedback__underline
 				.feedback-contacts
 					.feedback-address
-						img.feedback-address__img
-						span.feedback__text
+						img(src="static/img/content/footer/pin.png").feedback__img
+						span.feedback__text 43 gagarina street, kharkov, ukraine
 					.feedback-call
-						img.feedback-call__img
-						span.feedback__text
+						img(src="static/img/content/footer/phone.png").feedback__img
+						span.feedback__text +38 (057) 777-05-05
 					.feedback-mail
-						img.feedback-mail__img
-						span.feedback__text
+						img(src="static/img/content/footer/message.png").feedback__img
+						span.feedback__text mynameisskokov@gmail.com
 			.feedback-right
-				h2.feedback__title
+				h2.feedback__title Contact
 				.underline
-				.feedback__tip
+				.feedback__tip Please contact us using contact form below.
 				form(action="#").feedback-form
 					input(type="text" required placeholder="Name").feedback__input
 					input(type="email" required placeholder="Email").feedback__input
 					input(type="text" required placeholder="Subject").feedback__input
-					textarea(placeholder="Message")
-					input(type="submit" value="Send")
+					textarea(placeholder="Message").feedback__message
+					input(type="submit" value="Send").feedback__button

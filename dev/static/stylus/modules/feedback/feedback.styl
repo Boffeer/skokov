@@ -1,6 +1,80 @@
 .feedback
+	background #343434 url(../img/content/footer/footer-bg.png) 0 0 no-repeat
+	max-width 1600px
+	margin-left auto
+	margin-right auto
+	padding-top 95px
+	&:before
+		darkBg()
 	&-content
 		display flex
+		justify-content space-between
+		position relative
+		z-index 1 
+		color #ffffff
 	&-left
 	&-right
-		width 50%
+		width 40%
+	
+	// left
+	&__logo
+		@extend .red-title
+		font-size 32px
+		margin-bottom 35px
+	&__descr
+		margin-bottom 20px
+		font-size 14px
+	&__underline
+		margin-bottom 40px
+	&-contacts
+		display flex
+		flex-direction column
+		justify-content space-between
+		height 120px
+	&__img
+		margin-right 14px
+	&-address
+		display flex
+		align-items center
+	&-call
+		display flex
+		align-items center
+	&-mail
+		display flex
+		align-items center
+		
+
+	// Form
+	&-form
+		padding-right 55px
+	&__title
+		@extend .red-title
+		font-size 24px
+		margin-bottom 12px
+	&__tip
+		color #ffffff
+		margin-bottom 35px
+	&__input
+		padding 0 0 0 17px
+		width 100%
+		// max-width 445px 
+		// min-width 250px
+		height 45px
+		font-size 14px
+		background none
+		border 1px solid #aeaeae
+		color #aeaeae
+		margin-bottom 15px
+	&__message
+		@extend .feedback__input
+		height 190px
+		padding-top 10px
+	&__button
+		@extend .button
+		border none
+		margin-left auto
+		margin-bottom 50px
+		size(130px, 40px)
+		font-size 16px
+		padding-top 0
+		padding-bottom 0
