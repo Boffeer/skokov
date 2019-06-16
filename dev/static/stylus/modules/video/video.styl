@@ -38,14 +38,19 @@
 	transition all .5s 
 	&:hover
 		width 130px
-		background-color mianColor -15%
+		background-color #ff0000
 		border-radius 15px
 		transition all .5s 
 
 // ipad landscape
 @media (min-width: 768px) and (max-width: 1024px)
 	.video-content
-		padding-top 60px
+		padding-top 40px
+		
+//----low tablet landscape
+@media (min-width: 481px) and (max-width: 767px)
+	.video-content
+		padding-top 40px
 		
 //----phones
 @media (min-width: 320px) and (max-width: 480px)

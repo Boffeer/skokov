@@ -13,18 +13,13 @@
 		margin 0 auto 68px auto
 	&-features
 		display flex
-		justify-content space-between
+		justify-content space-around
 		flex-flow row wrap
 		margin 0 auto 25px auto
 	&__feature
 		width 21%
 		margin-bottom 50px
 .feature
-	display flex
-	flex-direction column
-	justify-content space-between
-	align-items center
-	width 90%
 	&__logo
 		margin-bottom 15px
 	&__title
@@ -34,7 +29,7 @@
 		@extend .bold
 	&__descr
 		font-size 14px
-		width 210px
+		max-width 210px
 		margin 0 auto
 		
 // ipad portrait
@@ -46,12 +41,14 @@
 			justify-content space-between
 			width 90% 
 		&__feature
-			width 28%
-			&:nth-child(n+5) .feature__title 
-				margin-bottom 28px
-			&:nth-child(n+5) .feature__logo
-					margin-bottom 18px 
-				
+			width 50%
+			// &:nth-child(n+5) .feature__title 
+			// 	margin-bottom 28px
+			// &:nth-child(n+5) .feature__logo
+			// 		margin-bottom 18px 
+.feautre
+	&__descr
+		width 100%
 			
 	
 // ipad land

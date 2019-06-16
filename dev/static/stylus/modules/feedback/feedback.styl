@@ -56,7 +56,7 @@
 		color #ffffff
 		margin-bottom 35px
 	&__input
-		padding 0 0 0 17px
+		padding 0 17px
 		width 100%
 		// max-width 445px 
 		// min-width 250px
@@ -80,11 +80,49 @@
 		padding-top 0
 		padding-bottom 0
 
+
+// something wrong
+@media (min-width 1100px) and (max-width 1189px)
+	.feedback
+		&-content
+			justify-content space-around
 	// ipads portrait
 @media (min-width: 768px) and (max-width: 1024px)
 	.feedback
 		&-content
-			justify-content space-around
+			display flex
+			flex-direction column
+		&__title
+			width 70%
+			margin-left auto
+			margin-right auto
+			text-align center
+		&__underline
+			margin-right auto
+			margin-left auto
+		&__descr
+			width 70%
+		&-left
+		&-right
+			width 90%
+			margin-left auto
+			margin-right auto
+			margin-bottom 35px
+		&-form
+			width 80%
+			margin 0 auto
+			padding 0
+		&__message
+			margin-bottom 30px
+		&__button
+			margin-right auto
+			width 160px
+			height 50px
+			font-size 24px 
+		&__tip
+			margin-right auto
+			margin-left auto
+			width 80%
 
 
 //----low tablet landscape
@@ -93,21 +131,37 @@
 		&-content
 			display flex
 			flex-direction column
-		&__descr
-			width 80%
-		&-left
-			width 80%
+		&__title
+			width 70%
 			margin-left auto
 			margin-right auto
-			margin-bottom 55px
+			text-align center
+		&__underline
+			margin-right auto
+			margin-left auto
+		&__descr
+			width 70%
+		&-left
 		&-right
-			width 80%
+			width 90%
 			margin-left auto
 			margin-right auto
 			margin-bottom 35px
 		&-form
-			width 90%
+			width 80%
+			margin 0 auto
 			padding 0
+		&__message
+			margin-bottom 30px
+		&__button
+			margin-right auto
+			width 160px
+			height 50px
+			font-size 24px 
+		&__tip
+			margin-right auto
+			margin-left auto
+			width 80%
 
 	//----phones 
 @media (min-width: 320px) and (max-width: 480px)
