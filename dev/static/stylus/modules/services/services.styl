@@ -43,13 +43,14 @@
 		&-features
 			display flex
 			flex-flow row wrap
-			width 80% 
+			justify-content space-between
+			width 90% 
 		&__feature
 			width 28%
 			&:nth-child(n+5) .feature__title 
-				margin-bottom 25px
+				margin-bottom 28px
 			&:nth-child(n+5) .feature__logo
-					margin-bottom 22px 
+					margin-bottom 18px 
 				
 			
 	
@@ -58,5 +59,26 @@
 	.services
 		&-features
 			max-width 95%
+
+
+//----low tablet landscape
+@media (min-width: 481px) and (max-width: 767px)
+	.services
+		&-features
+			justify-content space-around 
+		&__feature
+			width 39%
+			
+
+			
+//----phones
+@media (min-width: 320px) and (max-width: 480px)
+	.services
+		&-features
+			flex-direction column
+		&__feature
+			width 80%
+			margin-left auto
+			margin-right auto
 
 		

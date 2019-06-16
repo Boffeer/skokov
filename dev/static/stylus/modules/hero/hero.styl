@@ -5,6 +5,7 @@
 	margin 0 auto
 	background url(../img/content/hero/hero__bg.png) 0 0 no-repeat
 	position relative
+	overflow hidden
 	&:before
 		content ''
 		display block
@@ -41,7 +42,6 @@
 	&__title
 		margin-bottom 35px
 		font-size 60px
-		line-height 74px
 		@extend .bold
 	&__descr
 		margin-bottom 40px
@@ -74,6 +74,46 @@
 			width 100%
 			display flex
 			justify-content space-around
+			
+
+//----low tablet landscape
+@media (min-width: 481px) and (max-width: 767px)
+	.hero
+		padding-top 100px
+		&-text
+			width 80%
+			margin-left auto
+			margin-right auto
+		&__title
+			font-size 3rem
+		&-buttons
+			width 100%
+			display flex
+			justify-content space-around
+		&__button
+		&__button--learn
+			width 40%
+//----phones
+@media (min-width: 320px) and (max-width: 480px)
+	.hero
+		padding-top 180px
+		&-text
+			width 100%
+			text-align center
+		&__title
+			font-size 45px
+			line-height initial 
+		&__descr
+			width 80%
+			margin-left auto
+			margin-right auto
+		&-buttons
+			width 100%
+			display flex
+			justify-content space-around
+		&__button
+		&__button--learn
+			width 40%
 		
 
 		

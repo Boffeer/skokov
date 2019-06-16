@@ -15,14 +15,6 @@
 		z-index 0 
 		background-color rgba(#413f3e, .7)
 		overflow hidden 
-	// &:after
-	// 	content url(../img/content/dots.png)
-	// 	display block
-	// 	size(100%, 100%)
-	// 	position absolute
-	// 	top 0
-	// 	left 0
-	// 	z-index 0
 	&-content
 		text-align center
 		position relative
@@ -31,10 +23,36 @@
 	&__title
 		color #ffffff
 		text-transform uppercase 
-		font-size 34px
-		line-height 58px
+		font-size 1.953em
 		@extend .bold
 		margin-bottom 40px
 	&__button
+		@extend .button
 		margin 0 auto 
 		cursor pointer
+		
+
+//----ipad portrait
+@media (min-width: 768px) and (max-width: 1024px)
+	.contact
+		&-content
+			padding-top 50px
+
+
+//----low tablet landscape
+@media (min-width: 481px) and (max-width: 767px)
+	.contact
+		&-content
+			padding-top 80px
+			
+			
+//----phones
+@media (min-width: 320px) and (max-width: 480px)
+	.contact
+		&-content
+			padding-top 40px
+		&__title
+			line-height initial 
+			font-size 30px
+
+	

@@ -20,7 +20,8 @@
 	&__logo
 		@extend .red-title
 		font-size 32px
-		margin-bottom 35px
+		margin-bottom 15px
+		display block
 	&__descr
 		margin-bottom 20px
 		font-size 14px
@@ -78,3 +79,52 @@
 		font-size 16px
 		padding-top 0
 		padding-bottom 0
+
+	// ipads portrait
+@media (min-width: 768px) and (max-width: 1024px)
+	.feedback
+		&-content
+			justify-content space-around
+
+
+//----low tablet landscape
+@media (min-width: 481px) and (max-width: 767px)
+	.feedback
+		&-content
+			display flex
+			flex-direction column
+		&__descr
+			width 80%
+		&-left
+			width 80%
+			margin-left auto
+			margin-right auto
+			margin-bottom 55px
+		&-right
+			width 80%
+			margin-left auto
+			margin-right auto
+			margin-bottom 35px
+		&-form
+			width 90%
+			padding 0
+
+	//----phones 
+@media (min-width: 320px) and (max-width: 480px)
+	.feedback
+		&-content
+			display flex
+			flex-direction column
+		&-left
+		&-right
+			width 90%
+			margin-left auto
+			margin-right auto
+			margin-bottom 35px
+		&-form
+			padding 0
+		&__message
+			margin-bottom 30px
+		&__button
+			margin-right auto
+			width 160px

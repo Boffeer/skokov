@@ -9,14 +9,26 @@
 	&-blocks
 		display flex
 		justify-content space-between
+		background-color mainColor
 	&-left
 		width 75%
 		&__top
-		&__bottom
 			display flex
-		
+			background-size cover
+			background url(../img/content/news/top.png) 0 0 no-repeat
+			justify-content flex-end
+		&__bottom
+			background-size cover
+			background url(../img/content/news/bot.png) 100% 0 no-repeat
+			display flex
+			
+			
 	&-right 
 		width 25%
+		background url(../img/content/news/right.png) 0 0 no-repeat
+		display flex
+		align-items flex-end 
+
 		
 	&-text
 		padding 29px
@@ -51,10 +63,60 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
 	.news
 		&-blocks
+			max-width 900px 
 			flex-flow row wrap
+		&-left
+			width 100%
+			
+		&-right
+			width 100%
+			display flex
+			flex-direction row
+
+// ipad portrait
+@media (min-width: 768px) and (max-width: 1024px)
+	.news
+		&-blocks
+			flex-flow row wrap
+			max-width 900px
 		&-left
 			width 100%
 		&-right
 			width 100%
 			display flex
 			flex-direction row
+			
+//----low tablet landscape
+@media (min-width: 481px) and (max-width: 767px)
+	.news
+		&__descr
+			width 80%
+		&-blocks
+			flex-flow row wrap
+			width 300px
+			margin 0 auto
+			background none
+		&-left
+		&-right
+			width 100%
+			justify-content flex-end
+		&-text
+			background-color rgba(colorD, 0.89)
+			margin-bottom 25px
+
+	//----phones
+@media (min-width: 320px) and (max-width: 480px)
+	.news
+		&-blocks
+			flex-flow row wrap
+			// max-width 900px
+			width 300px
+			margin 0 auto
+			background none
+		&-left
+		&-right
+			width 100%
+			justify-content flex-end
+		&-text
+			background-color rgba(colorD, 0.89)
+			margin-bottom 15px

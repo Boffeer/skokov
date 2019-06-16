@@ -9,12 +9,51 @@
 	&-social
 		display flex
 		justify-content space-between
+		align-items center
 		max-width 260px
 		height 25px
 	&__in
 	&__fb
 	&__tw
 		padding 0 15px
-		border-right 1px solid mainColor
+		// border-right 1px solid mainColor
+		&:hover
+			filter invert(10)
 	&__yt
 		padding 0 15px
+		&:hover
+			filter contrast(4)
+	
+	&__line
+		content ''
+		display block
+		width 2px
+		height 22px
+		background-color mainColor
+// ipad portrait
+@media (min-width: 768px) and (max-width: 1024px)
+	.footer
+		&-content
+			height 80px
+			justify-content space-around
+			font-size 0.9rem
+			
+
+//----low tablet landscape
+@media (min-width: 481px) and (max-width: 767px)
+	.footer
+		&-content
+			height 80px
+			justify-content space-around
+			font-size 0.9rem
+			
+//----phones
+@media (min-width: 320px) and (max-width: 480px)
+	.footer
+		&-content
+			justify-content center
+			flex-direction column
+			font-size 0.9rem
+		&-social
+			margin-bottom 15px
+			order -1

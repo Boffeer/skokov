@@ -8,6 +8,7 @@
 		margin-bottom 55px
 	&__what
 		display flex
+		justify-content space-between
 		margin-bottom 50px
 	
 	&__we-do
@@ -64,3 +65,71 @@
 		justify-content space-between 
 	&__img-wrap
 		margin-bottom 20px
+
+
+// ipad portrait
+@media (min-width: 768px) and (max-width: 1024px)
+	.about
+		padding-top 40px
+		&-content
+			width 90%
+			margin-left auto
+			margin-right auto  
+		&__clients
+			width 40%
+	.we-do
+		&__descr
+			padding 0
+	.clients-slider
+		&__inner
+			width 48%
+			& > img
+				width 100% 
+				
+//----low tablet landscape
+@media (min-width: 481px) and (max-width: 767px)
+	.about
+		&__what
+			flex-direction column
+		&__we-do
+		&__clients
+		&-our-team
+			width 90%
+			margin-right auto
+			margin-left auto
+			margin-bottom 30px
+	.our-team
+		&__block
+			margin-right auto
+			margin-left auto
+		&__img
+			width 100%
+		&__img-wrap
+			width 48%
+		
+
+//----phones
+@media (min-width: 320px) and (max-width: 480px)
+	.about
+		&__what
+			flex-direction column
+		&__we-do
+		&__clients
+		&-our-team
+			width 90%
+			margin-right auto
+			margin-left auto
+			margin-bottom 30px
+	.we-do
+		&__descr
+			padding 0
+	.our-team
+		&__block
+			margin-right auto
+			margin-left auto
+		&__img
+			width 100%
+		&__img-wrap
+			width 48%
+			
+			 

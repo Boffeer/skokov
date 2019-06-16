@@ -10,8 +10,8 @@
 	overflowX hidden
 	&:before
 		darkBg()
-	&:after
-		dotsBg()
+	// &:after
+	// 	dotsBg()
 	&-content
 		position relative
 		z-index 1
@@ -46,3 +46,12 @@
 @media (min-width: 768px) and (max-width: 1024px)
 	.video-content
 		padding-top 60px
+		
+//----phones
+@media (min-width: 320px) and (max-width: 480px)
+	.video
+		&-content
+			padding-top 40px
+		&__title
+			font-size 1.1rem
+	
