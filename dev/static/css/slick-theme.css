@@ -122,7 +122,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 0px;
+    bottom: -25px;
 
     display: block;
 
@@ -141,13 +141,13 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 4px;
     margin: 0 5px;
     padding: 0;
 
     cursor: pointer;
-    background-color: #FE504F;
+    background-color: #aeaeae;
 }
 .slick-dots li button
 {
@@ -187,8 +187,8 @@
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 4px;
 
     content: '•';
     text-align: center;
@@ -203,4 +203,5 @@
 {
     opacity: .75;
     color: black;
+    background-color: #FE504F;    
 }

@@ -48,6 +48,12 @@
 		display flex
 		flex-flow row wrap
 		margin-bottom 80px
+	&__slider-wrap
+		display none
+
+
+
+
 
 // something wrong
 @media (min-width 1100px) and (max-width 1189px)
@@ -68,12 +74,19 @@
 				width 100%
 	.our-team
 		&__block
-			display flex
+			display none
 			justify-content space-around
 		&__img
 			width 100%
 			&-wrap
 				width 15%
+		&__slider-wrap
+			display none
+	
+
+
+
+
 // ipad land
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
 	.container
@@ -81,6 +94,10 @@
 	.about	
 		&__clients
 			width 42%
+			&-slider__inner
+				width 50%
+				& > img
+					width 100%
 		&__what
 			display flex
 			justify-content space-between
@@ -93,6 +110,12 @@
 		justify-content space-between 
 	&__img-wrap
 		margin-bottom 20px
+	&__slider-wrap
+		display block
+
+
+
+
 
 
 // ipad portrait
@@ -105,6 +128,10 @@
 			margin-right auto  
 		&__clients
 			width 40%
+			&-slider__inner
+				width 50%
+				& > img
+					width 100%
 	.we-do
 		&__descr
 			padding 0
@@ -113,7 +140,18 @@
 			width 48%
 			& > img
 				width 100% 
-				
+	.our-team
+		&__block
+			display none
+		&__slider-wrap
+			display block
+		&__img-wrap
+			max-width 200px
+		
+
+
+
+
 //----low tablet landscape
 @media (min-width: 481px) and (max-width: 767px)
 	.about
@@ -126,15 +164,27 @@
 			margin-right auto
 			margin-left auto
 			margin-bottom 30px
+		&__clients
+			&-slider__inner
+				width 50%
+				& > img
+					width 100%
 	.our-team
 		&__block
+			display none
 			margin-right auto
 			margin-left auto
 		&__img
 			width 100%
 		&__img-wrap
 			width 48%
+		&__slider-wrap
+			display block
 		
+
+
+
+
 
 //----phones
 @media (min-width: 320px) and (max-width: 480px)
@@ -148,16 +198,24 @@
 			margin-right auto
 			margin-left auto
 			margin-bottom 30px
+	.clients
+		&-slider__inner
+			width 50%
+			& > img
+				width 100%
 	.we-do
 		&__descr
 			padding 0
 	.our-team
 		&__block
+			display none
 			margin-right auto
 			margin-left auto
 		&__img
 			width 100%
 		&__img-wrap
 			width 48%
+		&__slider-wrap
+			display block
 			
 			 

@@ -3,8 +3,29 @@
 	.nav
 		justify-content space-between
 		width 80%
+		position relative
 		&-menu
-			display none	
+			display none
+			position absolute
+			z-index 12
+			&--active
+				width 200px
+				height 300px
+				top 59px
+				left 80%
+				display flex
+				flex-direction column
+				background-color rgba(colorD, 0.8)
+				padding 20px 0
+				obrder 2px solid mainColor
+				& > *
+					position relative
+					z-index 12
+		&__item
+			width 100%
+			margin auto 0 
+		&__link
+			text-align center
 	.burger
 		display flex
 		justify-content space-around
