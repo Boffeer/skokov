@@ -17,6 +17,7 @@
 			background-size cover
 			background url(../img/content/news/top.png) 0 0 no-repeat
 			justify-content flex-end
+			
 		&__bottom
 			background-size cover
 			background url(../img/content/news/bot.png) 100% 0 no-repeat
@@ -37,6 +38,7 @@
 		display flex
 		flex-direction column
 		align-items space-between
+		position relative
 		&__title
 			@extend .red-title
 		&__descr
@@ -48,6 +50,34 @@
 			font-size 12px
 			font-style italic
 			align-self flex-end
+.text
+	&-top
+		position relative
+		&:after
+			content ''
+			left -20%
+			top 5%
+			position absolute
+			border 30px solid transparent	
+			border-right 30px solid colorD
+	&-bottom
+		position relative
+		&:after
+			content ''
+			left 100%
+			top 5%
+			position absolute
+			border 30px solid transparent	
+			border-left 30px solid colorD
+	&-right
+		position relative
+		&:after
+			content ''
+			left 70%
+			bottom 100%
+			position absolute
+			border 30px solid transparent	
+			border-bottom 30px solid colorD
 // .text
 // 	&-top
 // 	&-bottom
@@ -87,6 +117,13 @@
 			flex-direction row
 	.text-right
 		margin-left 300px
+		&:after
+			content ''
+			left -20%
+			top 10%
+			position absolute
+			border 30px solid transparent	
+			border-right 30px solid colorD
 			
 //----low tablet landscape
 @media (min-width: 481px) and (max-width: 767px)
@@ -105,6 +142,17 @@
 		&-text
 			background-color rgba(colorD, 0.89)
 			margin-bottom 25px
+	.text
+		&-top
+		&-bottom
+		&-right
+			&:after
+				content ''
+				left -20%
+				top 10%
+				position absolute
+				border 30px solid transparent	
+				border-right 30px solid transparent
 
 	//----phones
 @media (min-width: 320px) and (max-width: 480px)
@@ -122,3 +170,14 @@
 		&-text
 			background-color rgba(colorD, 0.89)
 			margin-bottom 15px
+	.text
+			&-top
+			&-bottom
+			&-right
+				&:after
+					content ''
+					left -20%
+					top 10%
+					position absolute
+					border 30px solid transparent	
+					border-right 30px solid transparent
